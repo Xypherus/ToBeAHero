@@ -38,7 +38,7 @@ public class PlayerController : Character {
 
     bool IsGrounded()
     {
-        return Physics2D.Raycast(transform.position, -Vector3.up, distanceToGround + .1f);
+        return Physics2D.Raycast(transform.position, -Vector3.up, distanceToGround + groundAdditional);
     }
 
     private void FixedUpdate()
